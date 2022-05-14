@@ -7,6 +7,7 @@ const Header = () => {
 
   return (
     <Flex
+      as='header'
       w='100%'
       py='7'
       background='white'

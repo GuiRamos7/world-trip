@@ -1,11 +1,12 @@
-import { Text } from "@chakra-ui/react"
-import { Header } from 'components'
+import { Header, Banner } from 'components';
+
 const Home = () => {
   return (
     <div>
       <Header />
+      <Banner />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
