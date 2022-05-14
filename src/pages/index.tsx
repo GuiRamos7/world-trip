@@ -1,9 +1,9 @@
 import { Text } from "@chakra-ui/react"
-
+import { Header } from 'components'
 const Home = () => {
   return (
     <div>
-      <Text>Home</Text>
+      <Header />
     </div>
   )
 }
