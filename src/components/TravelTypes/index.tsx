@@ -1,4 +1,12 @@
-import { Box, Flex, Image, Text, Divider } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Image,
+  Text,
+  useBreakpointValue,
+  Icon,
+} from '@chakra-ui/react';
+import { BsDot } from 'react-icons/bs';
 
 const travelTypesObject = [
   {
@@ -29,6 +37,8 @@ const travelTypesObject = [
 ];
 
 const TravelTypes = () => {
+  const variant = useBreakpointValue({ base: false, lg: true });
+
   return (
     <>
       <Box
@@ -39,13 +49,26 @@ const TravelTypes = () => {
         px={['4', '4', '36', '36', '96']}
         w='100%'
       >
-        <Flex justify='space-between' w='100%'>
+        <Flex
+          justify={['start', 'start', 'space-between']}
+          wrap={['wrap', 'wrap', 'nowrap']}
+          w='100%'
+        >
           {travelTypesObject.map((obj) => (
-            <Flex direction='column' align='center'>
-              <Image src={obj.img} alt={obj.alt} />
-              <Text mt='6' size='xl' fontWeight='semibold'>
-                {obj.text}
-              </Text>
+            <Flex
+              key={obj.text.split(' ').join('-')}
+              direction='column'
+              align='center'
+            >
+              {variant && <Image src={obj.img} alt={obj.alt} />}
+              <Flex mt='6' align='center'>
+                {!variant && (
+                  <Icon as={BsDot} color='yellow.500' fontSize='40' />
+                )}
+                <Text size='xl' fontWeight='semibold' position='relative'>
+                  {obj.text}
+                </Text>
+              </Flex>
             </Flex>
           ))}
         </Flex>
