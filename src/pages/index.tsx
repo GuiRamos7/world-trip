@@ -1,10 +1,11 @@
-import { Header, Banner } from 'components';
+import { Header, Banner, TravelTypes } from 'components';
 
 const Home = () => {
   return (
     <div>
       <Header />
       <Banner />
+      <TravelTypes />
     </div>
   );
 };

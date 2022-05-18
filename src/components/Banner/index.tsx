@@ -10,7 +10,7 @@ const Banner = () => {
       backgroundRepeat='no-repeat'
       backgroundSize='cover'
       py={['7', '7', '20']}
-      px={['4', '4', '36']}
+      px={['4', '4', '36', '36', '96']}
       flexDirection='column'
       position='relative'
     >
