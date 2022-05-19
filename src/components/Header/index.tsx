@@ -1,6 +1,7 @@
-import { Flex, Box } from '@chakra-ui/react';
+import { Flex, Box, Icon } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { MdArrowBackIosNew } from 'react-icons/md';
+import Link from 'next/link';
 
 const Header = () => {
   const { asPath } = useRouter();
@@ -16,9 +17,11 @@ const Header = () => {
       position='relative'
     >
       {asPath !== '/' && (
-        <Box position='absolute' left='10'>
-          <MdArrowBackIosNew />
-        </Box>
+        <Link href='/'>
+          <Box position='absolute' left='10'>
+            <Icon cursor='pointer' as={MdArrowBackIosNew} />
+          </Box>
+        </Link>
       )}
       <img src='/images/logo.png' alt='Text write WorldTrip with a airplane' />
     </Flex>

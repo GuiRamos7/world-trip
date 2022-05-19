@@ -1,7 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Box, Text } from '@chakra-ui/react';
 import { Navigation, Pagination } from 'swiper';
+import Link from 'next/link';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -41,31 +42,37 @@ const Carousel = () => {
         className='mySwiper'
       >
         {continents.map((ct) => (
-          <SwiperSlide>
-            <Box
-              w='100%'
-              h={['250px', '250px', '450px']}
-              backgroundSize='cover'
-              backgroundPosition='bottom'
-              backgroundImage={ct.image}
-            >
+          <SwiperSlide key={ct.title.split('').join('-')}>
+            <Link href={`continent/${ct.name}`}>
               <Box
-                display='flex'
-                flexDirection='column'
-                alignItems='center'
-                justifyContent='center'
                 w='100%'
-                h='100%'
-                background='blackAlpha.600'
+                h={['250px', '250px', '450px']}
+                backgroundSize='cover'
+                backgroundPosition='bottom'
+                backgroundImage={ct.image}
               >
-                <Text fontSize={['2xl', '5xl']} fontWeight='bold' color='white'>
-                  {ct.title}
-                </Text>
-                <Text fontSize={['xl', '2xl']} color='white'>
-                  {ct.detail}
-                </Text>
+                <Box
+                  display='flex'
+                  flexDirection='column'
+                  alignItems='center'
+                  justifyContent='center'
+                  w='100%'
+                  h='100%'
+                  background='blackAlpha.600'
+                >
+                  <Text
+                    fontSize={['2xl', '5xl']}
+                    fontWeight='bold'
+                    color='white'
+                  >
+                    {ct.title}
+                  </Text>
+                  <Text fontSize={['xl', '2xl']} color='white'>
+                    {ct.detail}
+                  </Text>
+                </Box>
               </Box>
-            </Box>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
