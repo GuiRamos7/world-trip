@@ -33,7 +33,7 @@ const continents = [
 
 const Carousel = () => {
   return (
-    <Box py='10' px={['4', '4', '36', '36', '96']}>
+    <Box py='10' px={['0', '0', '0', '36']}>
       <Swiper
         navigation={true}
         pagination={true}
@@ -44,7 +44,7 @@ const Carousel = () => {
           <SwiperSlide>
             <Box
               w='100%'
-              h='450px'
+              h={['250px', '250px', '450px']}
               backgroundSize='cover'
               backgroundPosition='bottom'
               backgroundImage={ct.image}
@@ -55,7 +55,7 @@ const Carousel = () => {
                 alignItems='center'
                 justifyContent='center'
                 w='100%'
-                h='450px'
+                h='100%'
                 background='blackAlpha.600'
               >
                 <Text fontSize={['2xl', '5xl']} fontWeight='bold' color='white'>

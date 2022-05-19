@@ -46,7 +46,7 @@ const TravelTypes = () => {
         flexDirection='column'
         alignItems='center'
         py={['7', '7', '20']}
-        px={['4', '4', '36', '36', '96']}
+        px={['4', '4', '4', '36']}
         w='100%'
       >
         <Flex
