@@ -1,80 +1,112 @@
 {
-  "europe": [
-    {
-      "country": "Reino Unido",
-      "flag": "GB",
-      "city": "London",
-      "image": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740"
-    },
-    {
-      "country": "França",
-      "flag": "FR",
-      "city": "Paris",
-      "image": "https://images.unsplash.com/photo-1549144511-f099e773c147?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFyaXMlMjBmcmFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500"
-    },
-    {
-      "country": "Itália",
-      "flag": "IT",
-      "city": "Roma",
-      "image": "https://images.unsplash.com/photo-1584999872814-569a6b02a2b4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654"
-    },
-    {
-      "country": "Republica Tcheca",
-      "flag": "CZ",
-      "city": "Praga",
-      "image": "https://images.unsplash.com/photo-1577102763336-4b923556c512?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774"
-    },
-    {
-      "country": "Amsterdã",
-      "flag": "NL",
-      "city": "Holanda",
-      "image": "https://images.unsplash.com/photo-1580996378027-23040f16f157?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928"
-    }
-  ],
-  "asia": [
-    {
-      "country": "Hong Kong",
-      "flag": "HK",
-      "city": "Hong Kong",
-      "image": "https://images.unsplash.com/photo-1616394158624-a2ba9cfe2994?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774"
-    },
-    {
-      "country": "Tailândia",
-      "flag": "TH",
-      "city": "Bangkok",
-      "image": "https://images.unsplash.com/photo-1598970605070-a38a6ccd3a2d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
-    },
-    {
-      "country": "Singapura",
-      "flag": "SG",
-      "city": "Singapura",
-      "image": "https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548"
-    },
-    {
-      "country": "Dubai",
-      "flag": "AE",
-      "city": "Emirados Árabes Unidos",
-      "image": "https://images.unsplash.com/photo-1528702748617-c64d49f918af?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774"
-    },
-    {
-      "country": "China",
-      "flag": "CN",
-      "city": "Shenzhen",
-      "image": "https://images.unsplash.com/photo-1608381742187-ea4b48c56630?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1212"
-    }
-  ],
-  "south-america": [
-    {
-      "country": "Brasil",
-      "flag": "BR",
-      "city": "Rio de Janeiro",
-      "image": "https://images.unsplash.com/photo-1544989164-31dc3c645987?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
-    },
-    {
-      "country": "Argentina",
-      "flag": "AR",
-      "city": "Buenos Aires",
-      "image": "https://images.unsplash.com/photo-1610307437538-8b57b1ded9eb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654"
-    }
-  ]
+  "europe": {
+    "title": "Europa",
+    "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+    "number_countries": 50,
+    "languages": 60,
+    "cities": 27,
+    "background": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742",
+    "countries": [
+      {
+        "country": "Reino Unido",
+        "flag": "GB",
+        "city": "London",
+        "image": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740"
+      },
+      {
+        "country": "França",
+        "flag": "FR",
+        "city": "Paris",
+        "image": "https://images.unsplash.com/photo-1549144511-f099e773c147?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFyaXMlMjBmcmFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500"
+      },
+      {
+        "country": "Itália",
+        "flag": "IT",
+        "city": "Roma",
+        "image": "https://images.unsplash.com/photo-1584999872814-569a6b02a2b4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654"
+      },
+      {
+        "country": "Republica Tcheca",
+        "flag": "CZ",
+        "city": "Praga",
+        "image": "https://images.unsplash.com/photo-1577102763336-4b923556c512?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774"
+      },
+      {
+        "country": "Amsterdã",
+        "flag": "NL",
+        "city": "Holanda",
+        "image": "https://images.unsplash.com/photo-1580996378027-23040f16f157?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928"
+      }
+    ]
+  },
+
+  "asia": {
+    "title": "Asia",
+    "bio": "A Asia é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+    "number_countries": 23,
+    "languages": 7,
+    "cities": 272,
+    "background": "https://images.unsplash.com/photo-1513415564515-763d91423bdd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870",
+
+    "countries": [
+      {
+        "country": "Hong Kong",
+        "flag": "HK",
+        "city": "Hong Kong",
+        "image": "https://images.unsplash.com/photo-1616394158624-a2ba9cfe2994?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774"
+      },
+      {
+        "country": "Tailândia",
+        "flag": "TH",
+        "city": "Bangkok",
+        "image": "https://images.unsplash.com/photo-1598970605070-a38a6ccd3a2d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+      },
+      {
+        "country": "Singapura",
+        "flag": "SG",
+        "city": "Singapura",
+        "image": "https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548"
+      },
+      {
+        "country": "Dubai",
+        "flag": "AE",
+        "city": "Emirados Árabes Unidos",
+        "image": "https://images.unsplash.com/photo-1528702748617-c64d49f918af?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774"
+      },
+      {
+        "country": "China",
+        "flag": "CN",
+        "city": "Shenzhen",
+        "image": "https://images.unsplash.com/photo-1608381742187-ea4b48c56630?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1212"
+      }
+    ]
+  },
+  "south_america": {
+    "title": "America",
+    "bio": "A America é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+    "number_countries": 45,
+    "languages": 3,
+    "cities": 431,
+    "background": "https://images.unsplash.com/photo-1526308422422-6a57b9567eff?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740",
+    "countries": [
+      {
+        "country": "Brasil",
+        "flag": "BR",
+        "city": "Rio de Janeiro",
+        "image": "https://images.unsplash.com/photo-1544989164-31dc3c645987?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+      },
+      {
+        "country": "Argentina",
+        "flag": "AR",
+        "city": "Buenos Aires",
+        "image": "https://images.unsplash.com/photo-1610307437538-8b57b1ded9eb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654"
+      },
+      {
+        "country": "Peru",
+        "flag": "PE",
+        "city": "Cusco",
+        "image": "https://images.unsplash.com/photo-1526308422422-6a57b9567eff?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740"
+      }
+    ]
+  }
 }
