@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Grid, Text } from '@chakra-ui/react';
 import axios from 'axios';
 import { Header } from 'components';
 import { GetServerSideProps } from 'next';
@@ -44,7 +44,66 @@ const Continent = ({ continentInfo }: ContinentProps) => {
           Europa
         </Text>
       </Flex>
-      {console.log(continentInfo)}
+
+      <Flex
+        mt={['6', '6', '20']}
+        px={['4', '4', '36']}
+        direction={['column', 'column', 'row']}
+        justify={['initial', 'initial', 'space-between']}
+      >
+        <Text
+          textAlign='justify'
+          w={['100%', '100%', '40%']}
+          mb={['3', '3', '0']}
+        >
+          {continentInfo.bio}
+        </Text>
+        <Grid
+          w={['100%', '100%', '47%']}
+          templateColumns='repeat(3, 1fr)'
+          gap='10'
+        >
+          <Flex
+            direction='column'
+            align={['flex-start', 'flex-start', 'center']}
+          >
+            <Text
+              fontWeight='bold'
+              fontSize={['2xl', '2xl', '5xl']}
+              color='yellow.500'
+            >
+              {continentInfo.number_countries}
+            </Text>
+            <Text fontWeight='bold'>países</Text>
+          </Flex>
+          <Flex
+            direction='column'
+            align={['flex-start', 'flex-start', 'center']}
+          >
+            <Text
+              fontWeight='bold'
+              fontSize={['2xl', '2xl', '5xl']}
+              color='yellow.500'
+            >
+              {continentInfo.number_countries}
+            </Text>
+            <Text fontWeight='bold'>línguas</Text>
+          </Flex>
+          <Flex
+            direction='column'
+            align={['flex-start', 'flex-start', 'center']}
+          >
+            <Text
+              fontWeight='bold'
+              fontSize={['2xl', '2xl', '5xl']}
+              color='yellow.500'
+            >
+              {continentInfo.number_countries}
+            </Text>
+            <Text fontWeight='bold'>cidades +100 </Text>
+          </Flex>
+        </Grid>
+      </Flex>
     </>
   );
 };
