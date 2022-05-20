@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, Text } from '@chakra-ui/react';
 import axios from 'axios';
-import { Header } from 'components';
+import { CountryCard, Header } from 'components';
 import { GetServerSideProps } from 'next';
 
 interface ICountries {
@@ -41,7 +41,7 @@ const Continent = ({ continentInfo }: ContinentProps) => {
         justify={['center', 'center', 'flex-start']}
       >
         <Text fontWeight='bold' color='white' fontSize={['2xl', '2xl', '5xl']}>
-          Europa
+          {continentInfo.title}
         </Text>
       </Flex>
 
@@ -100,10 +100,32 @@ const Continent = ({ continentInfo }: ContinentProps) => {
             >
               {continentInfo.number_countries}
             </Text>
-            <Text fontWeight='bold'>cidades +100 </Text>
           </Flex>
         </Grid>
       </Flex>
+
+      <Box pb='10' mt={['6', '6', '20']} px={['4', '4', '36']}>
+        <Text fontSize={['xl', '4xl']} mb={['20px', '40px']} fontWeight='bold'>
+          Cidades +100
+        </Text>
+
+        <Grid
+          gap='45px'
+          w={['260px', '100%']}
+          margin={['auto', '0']}
+          templateColumns={['repeat(1, 256px)', 'repeat(auto-fill, 256px)']}
+        >
+          {continentInfo.countries.map((country) => (
+            <CountryCard
+              key={country.city.split('').join('-')}
+              city={country.city}
+              flag={country.flag}
+              image={country.image}
+              country={country.country}
+            />
+          ))}
+        </Grid>
+      </Box>
     </>
   );
 };
