@@ -1,3 +1,4 @@
+import { Box, Flex, Text } from '@chakra-ui/react';
 import axios from 'axios';
 import { Header } from 'components';
 import { GetServerSideProps } from 'next';
@@ -27,6 +28,22 @@ const Continent = ({ continentInfo }: ContinentProps) => {
   return (
     <>
       <Header />
+      <Flex
+        backgroundImage={continentInfo.background}
+        backgroundSize='cover'
+        bgPosition='bottom'
+        w='100%'
+        h={['150px', '200px', '500px']}
+        px={[0, 0, 36]}
+        py='16'
+        flexDirection='column-reverse'
+        align={['center', 'center', 'flex-start']}
+        justify={['center', 'center', 'flex-start']}
+      >
+        <Text fontWeight='bold' color='white' fontSize={['2xl', '2xl', '5xl']}>
+          Europa
+        </Text>
+      </Flex>
       {console.log(continentInfo)}
     </>
   );
