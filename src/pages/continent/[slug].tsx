@@ -100,6 +100,9 @@ const Continent = ({ continentInfo }: ContinentProps) => {
             >
               {continentInfo.number_countries}
             </Text>
+            <Text mb={['20px', '40px']} fontWeight='bold'>
+              cidades +100
+            </Text>
           </Flex>
         </Grid>
       </Flex>
